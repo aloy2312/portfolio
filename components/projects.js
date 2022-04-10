@@ -102,6 +102,11 @@ const projects = () => {
         </div>
         {/* Project 3 */}
       </div>
+      <div className={styles.githubDiv}>
+        <a href="https://github.com/aloysiustanrs">
+          <button className={styles.github}>SEE MORE ON GITHUB</button>
+        </a>
+      </div>
     </div>
   );
 };

@@ -8,3 +8,15 @@
   margin: 0 auto;
   font-family: "Roboto", sans-serif;
 }
+
+@media (max-width: 1500px) {
+  .container {
+    max-width: 70%;
+  }
+}
+
+@media (max-width: 1290px) {
+  .container {
+    max-width: 80%;
+  }
+}
