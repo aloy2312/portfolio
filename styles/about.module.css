@@ -1,0 +1,48 @@
+.aboutTitle {
+  font-size: 50px;
+  line-height: 67px;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+
+.aboutText {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.textbox {
+  width: 55%;
+}
+
+.image {
+  border-radius: 4%;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12rem;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    display: block;
+  }
+
+  .aboutTitle {
+    text-align: center;
+  }
+
+  .textbox {
+    width: 100%;
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .imageBox {
+    display: flex;
+    justify-content: center;
+  }
+}

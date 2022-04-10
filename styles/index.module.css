@@ -1,0 +1,10 @@
+.bgdark {
+  background-color: #121212;
+  color: #fafafa;
+}
+
+.container {
+  max-width: 65%;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+}

@@ -1,0 +1,61 @@
+@media (max-width: 483px) {
+  .navToggler {
+    margin: auto;
+    width: 100%;
+    color: #fafafa !important;
+  }
+  .navName {
+    width: 100%;
+    text-align: center;
+    margin-right: 0;
+  }
+
+  .navLinks {
+    text-align: center;
+    padding-top: 10px;
+  }
+}
+
+.navName {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #fafafa !important;
+  font-size: 25px;
+  line-height: 40px;
+}
+
+.nav {
+  margin: 1rem 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #121212d2;
+
+  animation: slideInFromLeft 2s, fadein 3s;
+}
+
+.navLinks {
+  color: #fafafa !important;
+  font-size: 20px;
+  line-height: 40px;
+  margin-right: 1.5rem;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

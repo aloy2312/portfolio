@@ -1,0 +1,27 @@
+.skillsTitle {
+  font-size: 50px;
+  line-height: 67px;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+
+.badgeList {
+  display: grid;
+  grid-template-columns: 15.625rem 15.625rem 15.625rem 15.625rem;
+  grid-gap: 1px;
+}
+
+.badge {
+  border: solid 2px white;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 3rem;
+  font-weight: 400;
+  font-size: 16px;
+  height: 3rem;
+  margin: 0 1rem 1rem 0;
+}
+
+.container {
+  margin-bottom: 12rem;
+}
