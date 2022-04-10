@@ -7,15 +7,15 @@
 
 .projectsTextLeft {
   width: 50%;
-  padding-right: 9rem;
+  padding-right: 4rem;
 }
 
 .projectsTextRight {
   width: 50%;
-  padding-left: 9rem;
+  padding-left: 4rem;
 }
 
-.imageBox {
+.imageBoxLeft {
   width: 50%;
   display: flex;
 }
@@ -32,7 +32,11 @@
   object-position: center;
 }
 
-.projectsGroup {
+.projectsGroup1 {
+  display: flex;
+  justify-content: space-between;
+}
+.projectsGroup2 {
   display: flex;
   justify-content: space-between;
 }
@@ -64,4 +68,43 @@
   width: 70%;
   border: solid 1px rgb(211, 207, 207);
   margin: 8rem auto;
+}
+
+@media (max-width: 1500px) {
+  .projectsGroups {
+    display: flex;
+    gap: 5rem;
+    overflow-x: auto;
+  }
+  .projectsGroup1 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .projectsGroup2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .horizontal {
+    display: none;
+  }
+  .projectsTextLeft {
+    padding: 0;
+    width: 100%;
+  }
+  .projectsTextRight {
+    padding: 0;
+    width: 100%;
+  }
+
+  .imageBoxLeft {
+    width: 100%;
+    width: 500px;
+    height: 375px;
+  }
+
+  .imageBoxRight {
+    width: 100%;
+    width: 500px;
+    height: 375px;
+  }
 }
