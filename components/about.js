@@ -17,7 +17,7 @@ const about = () => {
           </p>
           <p className={styles.aboutText}>
             Irure laborum culpa occaecat cupidatat elit reprehenderit aliquip.
-            Voluptate minim sint labore consequat eiusmod proident quis nisi
+            Voluptate mnim sint labore consequat eiusmod proident quis nisi
             occaecat consequat elit pariatur occaecat. Ea cillum ipsum sunt ut
             consequat dolor.
           </p>
