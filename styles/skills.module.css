@@ -25,3 +25,22 @@
 .container {
   margin-bottom: 12rem;
 }
+
+@media (max-width: 1300px) {
+  .badgeList {
+    grid-template-columns: 15.625rem 15.625rem 15.625rem;
+  }
+}
+
+@media (max-width: 1050px) {
+  .badgeList {
+    grid-template-columns: 15.625rem 15.625rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .badgeList {
+    grid-template-columns: 15.625rem 15.625rem;
+    overflow-x: auto;
+  }
+}
