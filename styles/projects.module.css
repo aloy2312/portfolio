@@ -94,7 +94,7 @@
 @media (max-width: 900px) {
   .projectsGroups {
     display: flex;
-    gap: 5rem;
+    gap: 2rem;
     overflow-x: auto;
   }
   .projectsGroup1 {
@@ -119,13 +119,17 @@
 
   .imageBoxLeft {
     width: 100%;
-    width: 500px;
-    height: 375px;
+    width: 320px;
+    height: 240px;
   }
 
   .imageBoxRight {
     width: 100%;
-    width: 500px;
-    height: 375px;
+    width: 320px;
+    height: 240px;
+  }
+
+  .github {
+    margin-top: 4rem;
   }
 }
