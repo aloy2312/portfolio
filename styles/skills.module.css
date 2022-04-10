@@ -19,7 +19,7 @@
   font-weight: 400;
   font-size: 16px;
   height: 3rem;
-  width: 15rem;
+  min-width: 15rem;
 }
 
 .container {
@@ -29,8 +29,9 @@
 @media (max-width: 1650px) {
   .badgeList {
     display: grid;
-    grid-template-columns: repeat(5, auto);
-    overflow: auto;
-    overflow-y: hidden;
+    grid-template-rows: 50px 50px; /* 2 rows of 50px */
+    grid-auto-flow: column; /* a column flow */
+    grid-auto-columns: 100px; /* each column will 100px of width */
+    overflow-x: auto;
   }
 }

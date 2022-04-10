@@ -11,7 +11,6 @@ const skills = () => {
         <div className={styles.badge}>JavaScript</div>
         <div className={styles.badge}>HTML</div>
         <div className={styles.badge}>CSS</div>
-
         <div className={styles.badge}>Bootstrap</div>
         <div className={styles.badge}>React</div>
         <div className={styles.badge}>NextJS</div>

@@ -95,6 +95,7 @@
   .projectsGroups {
     display: flex;
     gap: 2rem;
+
     overflow-x: auto;
   }
   .projectsGroup1 {
@@ -104,6 +105,10 @@
   .projectsGroup2 {
     display: flex;
     flex-direction: column;
+  }
+
+  .projectsName {
+    margin-top: 2rem;
   }
   .horizontal {
     display: none;

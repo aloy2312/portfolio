@@ -43,26 +43,42 @@
 
 @media (max-width: 890px) {
   .text1 {
-    font-size: 38px;
+    font-size: 37px;
   }
 
   .text2 {
-    font-size: 38px;
+    font-size: 37px;
   }
 }
 
 @media (max-width: 402px) {
   .text1 {
-    font-size: 30px;
+    font-size: 37px;
   }
 
   .text2 {
-    font-size: 30px;
+    font-size: 37px;
   }
 }
 
 @media (min-width: 750px) {
   .br {
     display: none;
+  }
+}
+
+@media (max-width: 750px) {
+  .text1 {
+    text-align: start;
+  }
+
+  .text2 {
+    text-align: start;
+  }
+
+  .horizontal {
+    width: 70%;
+    border: solid 1px rgb(211, 207, 207);
+    margin: 20px 0;
   }
 }
