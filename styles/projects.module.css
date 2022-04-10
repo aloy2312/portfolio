@@ -2,5 +2,66 @@
   font-size: 50px;
   line-height: 67px;
   font-weight: 700;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
+}
+
+.projectsTextLeft {
+  width: 50%;
+  padding-right: 9rem;
+}
+
+.projectsTextRight {
+  width: 50%;
+  padding-left: 9rem;
+}
+
+.imageBox {
+  width: 50%;
+  display: flex;
+}
+
+.imageBoxRight {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.image {
+  border-radius: 5%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.projectsGroup {
+  display: flex;
+  justify-content: space-between;
+}
+
+.projectsName {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.projectsInfo {
+  font-size: 16px;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.tags {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.tag {
+  margin: 0 3rem 1rem 0;
+}
+
+.horizontal {
+  width: 70%;
+  border: solid 1px rgb(211, 207, 207);
+  margin: 8rem auto;
 }
