@@ -13,14 +13,10 @@ const about = () => {
             commodo velit dolor reprehenderit.
           </p>
           <p className={styles.aboutText}>
-            Incididunt consectetur elit consectetur sunt.
+            Incididunt consectetur elit consectetur sunt. Nisi laboris
+            reprehenderit ea tempor sunt elit irure.
           </p>
-          <p className={styles.aboutText}>
-            Irure laborum culpa occaecat cupidatat elit reprehenderit aliquip.
-            Voluptate mnim sint labore consequat eiusmod proident quis nisi
-            occaecat consequat elit pariatur occaecat. Ea cillum ipsum sunt ut
-            consequat dolor.
-          </p>
+
           <p className={styles.aboutText}>
             Mollit eu pariatur excepteur et ullamco fugiat in aliqua.
           </p>
@@ -30,7 +26,7 @@ const about = () => {
         <Image
           priority
           src="/images/profile.jpg"
-          width={340}
+          width={360}
           height={380}
           alt="Aloysius Tan"
           className={styles.image}

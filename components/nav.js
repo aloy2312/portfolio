@@ -7,7 +7,7 @@ import { Nav } from "react-bootstrap";
 
 const Navigation = () => {
   return (
-    <Navbar expand="lg" className={styles.nav} sticky="top" variant="dark">
+    <Navbar expand="xxl" className={styles.nav} sticky="top" variant="dark">
       <Navbar.Brand className={styles.navName} href="/">
         ALOYSIUS TAN
       </Navbar.Brand>
