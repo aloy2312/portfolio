@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 
 import styles from "../styles/skills.module.css";
 
-const skills = () => {
+const Skills = () => {
   const [visible, setVisible] = useState(3);
 
   const showMoreButton = useRef(null);
@@ -29,7 +29,9 @@ const skills = () => {
       <div className={styles.skillsTitle}>Skills</div>
       <div className={styles.badgeList}>
         {badgeItems.slice(0, visible).map((item) => (
-          <div className={styles.badge}>{item}</div>
+          <div key={item.toString} className={styles.badge}>
+            {item}
+          </div>
         ))}
         <button
           ref={showMoreButton}
@@ -43,4 +45,4 @@ const skills = () => {
   );
 };
 
-export default skills;
+export default Skills;
