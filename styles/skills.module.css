@@ -7,8 +7,8 @@
 
 .badgeList {
   display: grid;
-  grid-template-columns: repeat(4, 15rem);
-  grid-gap: 1rem 1.5rem;
+  grid-template-columns: repeat(3, 12rem);
+  grid-gap: 1rem;
 }
 
 .badge {
@@ -19,19 +19,42 @@
   font-weight: 400;
   font-size: 16px;
   height: 3rem;
-  min-width: 15rem;
+  max-width: 12rem;
+}
+
+.showMoreButton {
+  border: solid 2px white;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 3rem;
+  font-weight: 400;
+  font-size: 16px;
+  height: 3rem;
+  min-width: 12rem;
 }
 
 .container {
   margin-bottom: 12rem;
 }
 
-@media (max-width: 1650px) {
+@media (max-width: 790px) {
   .badgeList {
-    display: grid;
-    grid-template-rows: 50px 50px; /* 2 rows of 50px */
-    grid-auto-flow: column; /* a column flow */
-    grid-auto-columns: 100px; /* each column will 100px of width */
-    overflow-x: auto;
+    grid-template-columns: repeat(2, 12rem);
+  }
+}
+
+@media (max-width: 510px) {
+  .badge {
+    border: solid 2px white;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 3rem;
+    font-weight: 400;
+    font-size: 16px;
+    height: 3rem;
+    max-width: 10rem;
+  }
+  .badgeList {
+    grid-gap: 1rem 0;
   }
 }

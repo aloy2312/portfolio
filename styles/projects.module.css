@@ -65,7 +65,7 @@
 }
 
 .horizontal {
-  width: 70%;
+  width: 55%;
   border: solid 1px rgb(211, 207, 207);
   margin: 8rem auto;
 }
@@ -91,12 +91,16 @@
   text-align: center;
 }
 
+.container {
+  margin-bottom: 12rem;
+}
+
 @media (max-width: 900px) {
   .projectsGroups {
     display: flex;
     gap: 2rem;
-
     overflow-x: auto;
+    align-items: center;
   }
   .projectsGroup1 {
     display: flex;
@@ -136,5 +140,19 @@
 
   .github {
     margin-top: 4rem;
+  }
+}
+
+@media (max-width: 410px) {
+  .imageBoxLeft {
+    width: 100%;
+    width: 256px;
+    height: 192px;
+  }
+
+  .imageBoxRight {
+    width: 100%;
+    width: 256px;
+    height: 192px;
   }
 }
