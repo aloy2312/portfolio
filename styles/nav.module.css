@@ -10,17 +10,15 @@
     margin-right: 0;
   }
 
-  .navLinks {
+  .navLink {
     text-align: center;
     padding-top: 10px;
     margin-right: 0 !important;
   }
 }
 
-.collapse {
-  position: absolute;
-  top: 56px;
-  background-color: #121212ea;
+.navLinks {
+  justify-content: end;
   width: 100%;
 }
 
@@ -74,23 +72,23 @@
 
 /* Nav Links */
 
-.navLinks {
+.navLink {
   color: #fafafa !important;
   font-size: 20px;
   line-height: 40px;
-  padding-right: 1.5rem;
+  margin-right: 1.5rem;
   text-decoration: none;
   text-align: center;
 
   position: relative;
 }
 
-.navLinks:hover {
+.navLink:hover {
   color: inherit;
   cursor: pointer;
 }
 
-.navLinks::before {
+.navLink::before {
   position: absolute;
   content: "";
   width: 0%;
@@ -104,7 +102,7 @@
   transition: 120ms ease-in-out;
 }
 
-.navLinks:hover::before {
+.navLink:hover::before {
   visibility: visible;
   width: 100%;
 }

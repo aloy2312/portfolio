@@ -8,7 +8,7 @@ import { Nav } from "react-bootstrap";
 
 const Navigation = () => {
   return (
-    <Navbar expand="false" className={styles.nav} sticky="top" variant="dark">
+    <Navbar expand="xxl" className={styles.nav} sticky="top" variant="dark">
       <Link
         to="hero"
         spy={true}
@@ -24,14 +24,15 @@ const Navigation = () => {
         className={styles.navToggler}
       />
       <Navbar.Collapse id="basic-navbar-nav" className={styles.collapse}>
-        <Nav className="me-auto justify-content-end" style={{ width: "100%" }}>
+      
+        <Nav  className={styles.navLinks}>
           <Link
             to="about"
             spy={true}
             smooth={true}
             offset={-350}
             duration={800}
-            className={styles.navLinks}
+            className={styles.navLink}
           >
             About
           </Link>
@@ -41,7 +42,7 @@ const Navigation = () => {
             smooth={true}
             offset={-350}
             duration={800}
-            className={styles.navLinks}
+            className={styles.navLink}
           >
             Skills
           </Link>
@@ -51,7 +52,7 @@ const Navigation = () => {
             smooth={true}
             offset={-200}
             duration={800}
-            className={styles.navLinks}
+            className={styles.navLink}
           >
             Projects
           </Link>
@@ -61,7 +62,7 @@ const Navigation = () => {
             smooth={true}
             offset={-200}
             duration={800}
-            className={styles.navLinks}
+            className={styles.navLink}
           >
             Contact
           </Link>
