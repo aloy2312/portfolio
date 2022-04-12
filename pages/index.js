@@ -31,9 +31,6 @@ export default function Home() {
         <Contact />
         <Links />
       </div>
-
-      <footer className={Footerstyles.footer}></footer>
-      <p>Hello</p>
     </div>
   );
 }

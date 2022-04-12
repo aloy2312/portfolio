@@ -1,6 +1,7 @@
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "../styles/nav.module.css";
+import { Link } from "react-scroll";
 
 import { Navbar } from "react-bootstrap";
 import { Nav } from "react-bootstrap";
@@ -17,18 +18,46 @@ const Navigation = () => {
       />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="me-auto justify-content-end" style={{ width: "100%" }}>
-          <Nav.Link className={styles.navLinks} href="/#project-header">
+          <Link
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={-350}
+            duration={800}
+            className={styles.navLinks}
+          >
             About
-          </Nav.Link>
-          <Nav.Link className={styles.navLinks} href="#skills">
+          </Link>
+          <Link
+            to="skills"
+            spy={true}
+            smooth={true}
+            offset={-350}
+            duration={800}
+            className={styles.navLinks}
+          >
             Skills
-          </Nav.Link>
-          <Nav.Link className={styles.navLinks} href="#link">
+          </Link>
+          <Link
+            to="projects"
+            spy={true}
+            smooth={true}
+            offset={-200}
+            duration={800}
+            className={styles.navLinks}
+          >
             Projects
-          </Nav.Link>
-          <Nav.Link className={styles.navLinks} href="#link">
+          </Link>
+          <Link
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={-200}
+            duration={800}
+            className={styles.navLinks}
+          >
             Contact
-          </Nav.Link>
+          </Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

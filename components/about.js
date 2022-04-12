@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <div className={styles.container}>
+    <div id="about" className={styles.container}>
       <div
         data-aos="fade-up"
         data-aos-duration="400"

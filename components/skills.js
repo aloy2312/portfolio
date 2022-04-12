@@ -104,7 +104,7 @@ const Skills = () => {
   ];
 
   return (
-    <div className={styles.container}>
+    <div id="skills" className={styles.container}>
       <div
         data-aos="fade-up"
         data-aos-duration="300"

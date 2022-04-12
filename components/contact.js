@@ -6,7 +6,7 @@ import { UncontrolledTooltip } from "reactstrap";
 
 const Contact = () => {
   return (
-    <div className={styles.container}>
+    <div id="contact" className={styles.container}>
       <div className={styles.contactTitle}>Contact Me</div>
       <div className={styles.contactTexts}>
         <p className={styles.contactMessage}>

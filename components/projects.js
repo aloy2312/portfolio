@@ -4,7 +4,7 @@ import styles from "../styles/projects.module.css";
 
 const Projects = () => {
   return (
-    <div className={styles.container}>
+    <div id="projects" className={styles.container}>
       <div
         data-aos="fade-up"
         data-aos-duration="300"
