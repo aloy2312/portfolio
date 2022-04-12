@@ -8,7 +8,7 @@ import { Nav } from "react-bootstrap";
 
 const Navigation = () => {
   return (
-    <Navbar expand="xxl" className={styles.nav} sticky="top" variant="dark">
+    <Navbar expand="false" className={styles.nav} sticky="top" variant="dark">
       <Link
         to="hero"
         spy={true}
@@ -23,7 +23,7 @@ const Navigation = () => {
         aria-controls="basic-navbar-nav"
         className={styles.navToggler}
       />
-      <Navbar.Collapse id="basic-navbar-nav">
+      <Navbar.Collapse id="basic-navbar-nav" className={styles.collapse}>
         <Nav className="me-auto justify-content-end" style={{ width: "100%" }}>
           <Link
             to="about"

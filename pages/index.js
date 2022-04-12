@@ -18,7 +18,7 @@ export default function Home() {
       <Head>
         <title>Aloysius Tan</title>
         <meta name="description" content="Hi! This is my portfolio website" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="" />
       </Head>
 
       <div className={Indexstyles.container}>

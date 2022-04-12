@@ -17,6 +17,13 @@
   }
 }
 
+.collapse {
+  position: absolute;
+  top: 56px;
+  background-color: #121212ea;
+  width: 100%;
+}
+
 /* Nav name */
 
 .navName {
@@ -71,8 +78,9 @@
   color: #fafafa !important;
   font-size: 20px;
   line-height: 40px;
-  margin-right: 1.5rem;
+  padding-right: 1.5rem;
   text-decoration: none;
+  text-align: center;
 
   position: relative;
 }
