@@ -9,9 +9,16 @@ import { Nav } from "react-bootstrap";
 const Navigation = () => {
   return (
     <Navbar expand="xxl" className={styles.nav} sticky="top" variant="dark">
-      <Navbar.Brand className={styles.navName} href="/">
+      <Link
+        to="hero"
+        spy={true}
+        smooth={true}
+        offset={-350}
+        duration={800}
+        className={styles.navName}
+      >
         ALOYSIUS TAN
-      </Navbar.Brand>
+      </Link>
       <Navbar.Toggle
         aria-controls="basic-navbar-nav"
         className={styles.navToggler}

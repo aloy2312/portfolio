@@ -2,7 +2,7 @@ import React from "react";
 import styles from "../styles/hero.module.css";
 const Hero = () => {
   return (
-    <div className={styles.container}>
+    <div id="hero" className={styles.container}>
       <div className={styles.textbox}>
         <div className={styles.text1}>
           Hi , my name is <br className={styles.br} />

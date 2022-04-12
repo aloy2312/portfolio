@@ -31,7 +31,7 @@
 
 .contactButtons {
   display: grid;
-  grid-template-columns: repeat(5, auto);
+  grid-template-columns: repeat(3, auto);
   gap: 2rem;
 
   justify-content: center;
