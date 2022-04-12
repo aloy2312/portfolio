@@ -2,12 +2,12 @@
   font-size: 50px;
   line-height: 67px;
   font-weight: 700;
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
 }
 
 .badgeList {
   display: grid;
-  grid-template-columns: repeat(3, 12rem);
+  grid-template-columns: repeat(5, 12rem);
   grid-gap: 1rem;
 }
 
@@ -20,21 +20,31 @@
   font-size: 16px;
   height: 3rem;
   max-width: 12rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 2rem;
 }
 
-.showMoreButton {
-  border: solid 2px white;
-  border-radius: 10px;
-  text-align: center;
-  line-height: 3rem;
-  font-weight: 400;
-  font-size: 16px;
-  height: 3rem;
-  min-width: 12rem;
+.icon {
+  font-size: 24px;
+  margin-right: 8px;
 }
 
 .container {
   margin-bottom: 12rem;
+}
+
+@media (max-width: 1980px) {
+  .badgeList {
+    grid-template-columns: repeat(4, 12rem);
+  }
+}
+
+@media (max-width: 1070px) {
+  .badgeList {
+    grid-template-columns: repeat(3, 12rem);
+  }
 }
 
 @media (max-width: 790px) {
@@ -45,13 +55,6 @@
 
 @media (max-width: 510px) {
   .badge {
-    border: solid 2px white;
-    border-radius: 10px;
-    text-align: center;
-    line-height: 3rem;
-    font-weight: 400;
-    font-size: 16px;
-    height: 3rem;
     max-width: 10rem;
   }
   .badgeList {

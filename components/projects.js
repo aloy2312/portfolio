@@ -2,14 +2,24 @@ import React from "react";
 import Image from "next/image";
 import styles from "../styles/projects.module.css";
 
-const projects = () => {
+const Projects = () => {
   return (
     <div className={styles.container}>
-      <div className={styles.projectsTitle}>Projects</div>
+      <div
+        data-aos="fade-up"
+        data-aos-duration="300"
+        className={styles.projectsTitle}
+      >
+        Projects
+      </div>
       {/* 3 Projects  */}
       <div className={styles.projectsGroups}>
         {/* Project 1 */}
-        <div className={styles.projectsGroup1}>
+        <div
+          data-aos="fade-right"
+          data-aos-duration="500"
+          className={styles.projectsGroup1}
+        >
           <div className={styles.projectsTextLeft}>
             <div className={styles.projectsName}>Project Name</div>
             <div className={styles.projectsInfo}>
@@ -38,10 +48,18 @@ const projects = () => {
         </div>
         {/* Project 1 */}
 
-        <hr className={styles.horizontal} />
+        <hr
+          data-aos="fade-in"
+          data-aos-duration="100"
+          className={styles.horizontal}
+        />
 
         {/* Project 2 */}
-        <div className={styles.projectsGroup2}>
+        <div
+          data-aos="fade-left"
+          data-aos-duration="500"
+          className={styles.projectsGroup2}
+        >
           <div className={styles.imageBoxLeft}>
             <Image
               priority
@@ -70,10 +88,18 @@ const projects = () => {
         </div>
         {/* Project 2 */}
 
-        <hr className={styles.horizontal} />
+        <hr
+          data-aos="fade-in"
+          data-aos-duration="100"
+          className={styles.horizontal}
+        />
 
         {/* Project 3 */}
-        <div className={styles.projectsGroup1}>
+        <div
+          data-aos="fade-right"
+          data-aos-duration="500"
+          className={styles.projectsGroup1}
+        >
           <div className={styles.projectsTextLeft}>
             <div className={styles.projectsName}>Project Name</div>
             <div className={styles.projectsInfo}>
@@ -102,7 +128,13 @@ const projects = () => {
         </div>
         {/* Project 3 */}
       </div>
-      <div className={styles.githubDiv}>
+      <div
+        data-aos="fade-in"
+        data-aos-duration="600"
+        data-aos-delay="400"
+        data-aos-easing="ease-out"
+        className={styles.githubDiv}
+      >
         <a href="https://github.com/aloysiustanrs">
           <button className={styles.github}>SEE MORE ON GITHUB</button>
         </a>
@@ -111,4 +143,4 @@ const projects = () => {
   );
 };
 
-export default projects;
+export default Projects;

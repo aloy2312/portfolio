@@ -1,11 +1,15 @@
 import Head from "next/head";
 
+// Components
 import Navigation from "../components/nav";
 import Hero from "../components/hero";
 import About from "../components/about";
 import Skills from "../components/skills";
 import Projects from "../components/projects";
 import Contact from "../components/contact";
+import Links from "../components/links";
+
+// Styles
 import Footerstyles from "../styles/footer.module.css";
 import Indexstyles from "../styles/index.module.css";
 
@@ -25,6 +29,7 @@ export default function Home() {
         <Skills />
         <Projects />
         <Contact />
+        <Links />
       </div>
 
       <footer className={Footerstyles.footer}></footer>

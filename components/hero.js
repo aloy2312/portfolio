@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../styles/hero.module.css";
-const hero = () => {
+const Hero = () => {
   return (
     <div className={styles.container}>
       <div className={styles.textbox}>
@@ -15,4 +15,4 @@ const hero = () => {
   );
 };
 
-export default hero;
+export default Hero;

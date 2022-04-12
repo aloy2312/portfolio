@@ -2,10 +2,14 @@ import React from "react";
 import styles from "../styles/about.module.css";
 import Image from "next/image";
 
-const about = () => {
+const About = () => {
   return (
     <div className={styles.container}>
-      <div className={styles.textbox}>
+      <div
+        data-aos="fade-up"
+        data-aos-duration="400"
+        className={styles.textbox}
+      >
         <div>
           <div className={styles.aboutTitle}>About me</div>
           <p className={styles.aboutText}>
@@ -22,7 +26,11 @@ const about = () => {
           </p>
         </div>
       </div>
-      <div className={styles.imageBox}>
+      <div
+        data-aos="fade-left"
+        data-aos-duration="400"
+        className={styles.imageBox}
+      >
         <Image
           priority
           src="/images/profile.jpg"
@@ -36,4 +44,4 @@ const about = () => {
   );
 };
 
-export default about;
+export default About;

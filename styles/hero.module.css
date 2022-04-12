@@ -2,27 +2,46 @@
   font-size: 45px;
   line-height: 67px;
   font-weight: 700;
+  animation: fadein 800ms 800ms forwards;
+  opacity: 0;
+}
+
+.horizontal {
+  width: 70%;
+  border: solid 1px rgb(128, 128, 128);
+  margin: 20px auto 20px;
+  opacity: 0;
+
+  animation: fadein 800ms 1400ms forwards,
+    horizontal 800ms ease-in-out 1400ms forwards;
+}
+
+@keyframes fadein {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes horizontal {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 .text2 {
   font-size: 42px;
   line-height: 67px;
   font-weight: 700;
-}
-
-.horizontal {
-  width: 70%;
-  border: solid 1px rgb(211, 207, 207);
-  margin: 20px auto 20px;
+  animation: fadein 800ms 2300ms forwards;
+  opacity: 0;
 }
 
 .textbox {
   margin-bottom: 10rem;
   text-align: center;
-
-  animation-name: fadein;
-  animation-duration: 2s;
-  animation-timing-function: ease-in;
 }
 
 .container {
@@ -30,15 +49,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 
 @media (max-width: 890px) {
@@ -68,6 +78,11 @@
 }
 
 @media (max-width: 750px) {
+  /* increase vh of container to fit text and not see about for mobile view */
+  .container {
+    height: 100vh;
+  }
+
   .text1 {
     text-align: start;
   }
