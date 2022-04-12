@@ -62,6 +62,12 @@
 
 .tag {
   margin: 0 3rem 1rem 0;
+
+  /* Underline texture for tag*/
+  background: linear-gradient(to left, #121212 -30%, #616161 170%);
+  background-repeat: no-repeat;
+  background-size: 100% 20%;
+  background-position: 20% 90%;
 }
 
 .horizontal {

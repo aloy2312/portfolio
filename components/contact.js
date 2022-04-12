@@ -4,8 +4,6 @@ import styles from "../styles/contact.module.css";
 // Tool Tip from react strap
 import { UncontrolledTooltip } from "reactstrap";
 
-
-
 const Contact = () => {
   return (
     <div className={styles.container}>
@@ -28,7 +26,6 @@ const Contact = () => {
           Copy me!
         </UncontrolledTooltip>
       </div>
-      
     </div>
   );
 };
