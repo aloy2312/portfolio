@@ -24,9 +24,9 @@ const Links = () => {
         <button className={styles.contactButton}>
           <FontAwesomeIcon className={styles.icon} icon={faGithub} /> Github
         </button>
-        <button className={styles.contactButton}>
+        {/* <button className={styles.contactButton}>
           <FontAwesomeIcon className={styles.icon} icon={faMedium} /> Medium
-        </button>
+        </button> */}
         <button className={styles.contactButton}>
           <FontAwesomeIcon className={styles.icon} icon={faEnvelope} /> Mail
         </button>

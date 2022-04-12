@@ -32,9 +32,9 @@
 .contactButtons {
   display: grid;
   grid-template-columns: repeat(5, auto);
+  gap: 2rem;
 
-  justify-content: space-evenly;
-  justify-items: start;
+  justify-content: center;
   overflow-x: auto;
   overflow-y: hidden;
   margin: 5rem 0;
