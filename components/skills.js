@@ -1,10 +1,15 @@
 import React, { useState, useRef } from "react";
 
-// Font Awesome
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Python from "../public/icons/python.svg";
+import Java from "../public/icons/java.svg";
+import Javascript from "../public/icons/javascript.svg";
+import HTML from "../public/icons/html.svg";
+import CSS from "../public/icons/css3.svg";
+import Bootstrap from "../public/icons/bootstrap.svg";
+import ReactIcon from "../public/icons/react.svg";
+import Android from "../public/icons/android.svg";
 
 import styles from "../styles/skills.module.css";
-import { faJava, faJs, faPython } from "@fortawesome/free-brands-svg-icons";
 
 const Skills = () => {
   const [visible, setVisible] = useState(3);
@@ -23,7 +28,7 @@ const Skills = () => {
       className={styles.badge}
       key="python"
     >
-      <FontAwesomeIcon className={styles.icon} icon={faPython} />
+      <Python className={styles.svg} />
       Python
     </div>,
     <div
@@ -33,7 +38,7 @@ const Skills = () => {
       className={styles.badge}
       key="java"
     >
-      <FontAwesomeIcon className={styles.icon} icon={faJava} />
+      <Java className={styles.svg} />
       Java
     </div>,
     <div
@@ -43,7 +48,7 @@ const Skills = () => {
       className={styles.badge}
       key="js"
     >
-      <FontAwesomeIcon className={styles.icon} icon={faJava} />
+      <Javascript className={styles.svg} />
       JavaScript
     </div>,
     <div
@@ -53,7 +58,7 @@ const Skills = () => {
       className={styles.badge}
       key="html"
     >
-      <FontAwesomeIcon className={styles.icon} icon={faPython} />
+      <HTML className={styles.svg} />
       HTML
     </div>,
     <div
@@ -63,7 +68,7 @@ const Skills = () => {
       className={styles.badge}
       key="css"
     >
-      <FontAwesomeIcon className={styles.icon} icon={faPython} />
+      <CSS className={styles.svg} />
       CSS
     </div>,
     <div
@@ -73,7 +78,7 @@ const Skills = () => {
       className={styles.badge}
       key="bootstrap"
     >
-      <FontAwesomeIcon className={styles.icon} icon={faPython} />
+      <Bootstrap className={styles.svg} />
       Bootstrap
     </div>,
     <div
@@ -83,7 +88,7 @@ const Skills = () => {
       className={styles.badge}
       key="react"
     >
-      <FontAwesomeIcon className={styles.icon} icon={faPython} />
+      <ReactIcon className={styles.svg} />
       React
     </div>,
     <div
@@ -93,7 +98,7 @@ const Skills = () => {
       className={styles.badge}
       key="android"
     >
-      <FontAwesomeIcon className={styles.icon} icon={faPython} />
+      <Android className={styles.svg} />
       App Dev
     </div>,
   ];

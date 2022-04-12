@@ -26,13 +26,14 @@
   padding-left: 2rem;
 }
 
-.icon {
-  font-size: 24px;
-  margin-right: 8px;
-}
-
 .container {
   margin-bottom: 12rem;
+}
+
+.svg {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
 }
 
 @media (max-width: 1980px) {
