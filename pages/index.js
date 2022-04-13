@@ -1,5 +1,3 @@
-import Head from "next/head";
-
 // Components
 import Navigation from "../components/nav";
 import Hero from "../components/hero";
@@ -15,12 +13,6 @@ import Indexstyles from "../styles/index.module.css";
 export default function Home() {
   return (
     <div className={Indexstyles.bgdark}>
-      <Head>
-        <title>Aloysius Tan</title>
-        <meta name="description" content="Hi! This is my portfolio website" />
-        <link rel="icon" href="" />
-      </Head>
-
       <div className={Indexstyles.container}>
         <Navigation />
         <Hero />
