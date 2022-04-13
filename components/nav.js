@@ -122,15 +122,61 @@ const OverlayMenu = styled.ul`
 
   li {
     opacity: ${(props) => (props.open ? 1 : 0)};
+    z-index:${(props) => (props.open ? 1 : -99)};
     font-size: 18px;
-    transition: opacity 0.4s ease-in-out;
-    margin-bottom:20px
+    margin-bottom:20px;
+
   }
+  
+
+  & .about{
+    opacity: ${(props) => (props.open ? 1 : 0)};
+    font-size: 18px;
+    transition: opacity 0.4s 100ms ease-in-out;
+
+  }
+
+  
+
+  & .skills{
+    opacity: ${(props) => (props.open ? 1 : 0)};
+    font-size: 18px;
+    transition: opacity 0.4s 200ms ease-in-out;
+  }
+
+
+  & .projects{
+    opacity: ${(props) => (props.open ? 1 : 0)};
+    font-size: 18px;
+    transition: opacity 0.4s 300ms ease-in-out;
+
+  }
+
+
+
+  & .contact{
+    opacity: ${(props) => (props.open ? 1 : 0)};
+    font-size: 18px;
+    transition: opacity 0.4s 400ms ease-in-out;
+    
+
+  }
+
+
+
+
 
 
   @media (max-width: 769px) {
     margin:0
     padding: 0;
+  }
+
+  @media (min-width: 769px) {
+    ul{
+      display:none;
+    }
+
   }
 `;
 
@@ -171,22 +217,38 @@ const Header = () => {
       <Overlay open={toggle}>
         <OverlayMenu open={toggle}>
           <Item>
-            <Link target="#" href="https://www.instagram.com/igor_dumencic/">
+            <Link
+              className="about"
+              target="#"
+              href="https://www.instagram.com/igor_dumencic/"
+            >
               About
             </Link>
           </Item>
           <Item>
-            <Link target="#" href="https://www.behance.net/igordumencic">
+            <Link
+              className="skills"
+              target="#"
+              href="https://www.behance.net/igordumencic"
+            >
               Skills
             </Link>
           </Item>
           <Item>
-            <Link target="#" href="https://github.com/Igor178">
+            <Link
+              className="projects"
+              target="#"
+              href="https://github.com/Igor178"
+            >
               Projects
             </Link>
           </Item>
           <Item>
-            <Link target="#" href="https://github.com/Igor178">
+            <Link
+              className="contact"
+              target="#"
+              href="https://github.com/Igor178"
+            >
               Contact
             </Link>
           </Item>
