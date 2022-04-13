@@ -24,8 +24,7 @@ const Navigation = () => {
         className={styles.navToggler}
       />
       <Navbar.Collapse id="basic-navbar-nav" className={styles.collapse}>
-      
-        <Nav  className={styles.navLinks}>
+        <Nav className={styles.navLinks}>
           <Link
             to="about"
             spy={true}
