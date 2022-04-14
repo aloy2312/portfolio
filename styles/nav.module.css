@@ -1,111 +1,135 @@
-@media (max-width: 483px) {
-  .navToggler {
-    margin: auto;
-    width: 100%;
-    color: #fafafa !important;
-  }
-  .navName {
-    width: 100%;
-    text-align: center;
-    margin-right: 0;
-  }
-
-  .navLink {
-    text-align: center;
-    padding-top: 10px;
-    margin-right: 0 !important;
-  }
-}
-
-.navLinks {
-  justify-content: end;
-  width: 100%;
-}
-
-/* Nav name */
-
-.navName {
-  font-family: "Roboto", sans-serif;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: #fafafa !important;
-  font-size: 25px;
-  line-height: 40px;
-  text-decoration: none;
-  user-select: none;
-
-  position: relative;
-}
-
-.navName:hover {
-  color: inherit;
-  cursor: pointer;
-}
-
-.navName::before {
-  position: absolute;
-  content: "";
-  width: 0%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  border-radius: 10px;
-  background-color: #9e9e9e;
-  visibility: hidden;
-
-  transition: 120ms ease-in-out;
-}
-
-.navName:hover::before {
-  visibility: visible;
-  width: 100%;
-}
-
-/* Nav */
-
-.nav {
-  margin: 1rem 0;
-  font-family: "Roboto", sans-serif;
-  background-color: #121212ea;
-
+.navBar {
+  background-color: #121212ea !important;
+  padding: 20px 0;
+  margin: 0;
+  z-index: 99;
   animation: slideInFromTop 1000ms, fadein 1.8s;
 }
 
-/* Nav Links */
-
-.navLink {
+.navBrand {
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
   color: #fafafa !important;
   font-size: 20px;
-  line-height: 40px;
-  margin-right: 1.5rem;
-  text-decoration: none;
-  text-align: center;
-
-  position: relative;
 }
 
-.navLink:hover {
-  color: inherit;
+.navLinks {
+  color: white !important;
+}
+
+.navToggler {
+  display: block;
+  position: relative;
+  z-index: 1;
+  user-select: none;
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
   cursor: pointer;
 }
 
-.navLink::before {
-  position: absolute;
-  content: "";
-  width: 0%;
-  height: 2px;
-  bottom: 3px;
-  left: 0;
-  border-radius: 10px;
-  background-color: #9e9e9e;
-  visibility: hidden;
-
-  transition: 120ms ease-in-out;
+.navToggler:focus,
+.navToggler:active {
+  outline: none;
+  box-shadow: none;
 }
 
-.navLink:hover::before {
-  visibility: visible;
-  width: 100%;
+.spanGroup {
+  display: block;
+  width: 33px;
+  height: 4px;
+  position: relative;
+
+  background-color: white;
+  border-radius: 6px;
+  z-index: 1;
+  transform-origin: 0 0;
+  transition: 0.4s;
+}
+
+.spanMiddle {
+  margin: 5px 0;
+}
+
+.span1 {
+  transform: translate(100%, 100%) !important;
+}
+
+.span2 {
+  opacity: 0;
+  transform: translateX(15px) !important;
+}
+.span3 {
+  transform: translate(-3px, 3px) rotate(-45deg) !important;
+}
+
+@media (max-width: 991px) {
+  .collapse {
+  }
+  .dropdown {
+    background-color: #121212ea;
+    background-image: none;
+    backdrop-filter: blur(3px);
+
+    position: absolute;
+    right: 0;
+    padding: 0 20px 5px 20px;
+    margin: 20px 0 0 0;
+
+    border-right: 2px solid;
+
+    border-color: grey;
+    border-radius: 2%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
+  .navLinks {
+    text-align: end;
+    color: white !important;
+  }
+
+  .aboutNavLink {
+    text-align: end;
+    color: white !important;
+    -webkit-animation-name: slideIn;
+    animation-name: slideIn;
+    animation-duration: 150ms;
+  }
+  .skillsNavLink {
+    text-align: end;
+    color: white !important;
+    -webkit-animation-name: slideIn;
+    animation-name: slideIn;
+    animation-duration: 300ms;
+  }
+  .projectsNavLink {
+    text-align: end;
+    color: white !important;
+    -webkit-animation-name: slideIn;
+    animation-name: slideIn;
+    animation-duration: 450ms;
+  }
+  .contactNavLink {
+    text-align: end;
+    color: white !important;
+    -webkit-animation-name: slideIn;
+    animation-name: slideIn;
+    animation-duration: 600ms;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(2rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0rem);
+    opacity: 1;
+  }
 }
 
 @keyframes slideInFromTop {

@@ -13,6 +13,9 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 config.autoAddCss = false;
 
+//React Bootstrap
+import "bootstrap/dist/css/bootstrap.min.css";
+
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
     AOS.init({
