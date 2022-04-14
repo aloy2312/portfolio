@@ -112,6 +112,7 @@ const Overlay = styled.div`
 `;
 
 const OverlayMenu = styled.ul`
+  height: ${(props) => (props.open ? "25vh" : 0)};
   list-style: none;
   position: relative;
   display: flex;
@@ -119,7 +120,6 @@ const OverlayMenu = styled.ul`
   align-items: end;
   padding:0;
   margin:0 25px 0 0;
-  
 
   li {
     opacity: ${(props) => (props.open ? 1 : 0)};
