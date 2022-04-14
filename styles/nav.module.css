@@ -1,5 +1,7 @@
 .navBar {
   background-color: #121212ea !important;
+  background-image: none;
+  backdrop-filter: blur(3px);
   padding: 20px 0;
   margin: 0;
   z-index: 99;
@@ -14,6 +16,8 @@
   font-size: 20px;
   position: relative;
   text-decoration: none;
+
+  user-select: none;
 }
 .navBrand:hover {
   color: inherit;
@@ -44,6 +48,9 @@
   text-decoration: none;
   position: relative;
   padding-bottom: 6px;
+  cursor: pointer;
+
+  user-select: none;
 }
 .navLinks::before {
   position: absolute;

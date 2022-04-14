@@ -8,7 +8,8 @@
 .badgeList {
   display: grid;
   grid-template-columns: repeat(5, 12rem);
-  grid-gap: 1rem;
+  row-gap: 16px;
+  column-gap: 0px;
 }
 
 .badge {
@@ -17,13 +18,13 @@
   text-align: center;
   line-height: 3rem;
   font-weight: 400;
-  font-size: 16px;
-  height: 3rem;
-  max-width: 12rem;
+  font-size: 14px;
+  height: 50px;
+  max-width: 160px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding-left: 2rem;
+  padding-left: 24px;
 }
 
 .container {
@@ -31,38 +32,35 @@
 }
 
 .svg {
-  width: 24px;
-  height: 24px;
-  margin-right: 8px;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
 }
 
 .loadMoreButton:hover {
   cursor: pointer;
 }
 
-@media (max-width: 1980px) {
+@media (max-width: 1695px) {
   .badgeList {
     grid-template-columns: repeat(4, 12rem);
   }
 }
 
-@media (max-width: 1070px) {
+@media (max-width: 922px) {
   .badgeList {
     grid-template-columns: repeat(3, 12rem);
   }
 }
 
-@media (max-width: 790px) {
+@media (max-width: 685px) {
   .badgeList {
     grid-template-columns: repeat(2, 12rem);
   }
 }
 
-@media (max-width: 510px) {
-  .badge {
-    max-width: 10rem;
-  }
+@media (max-width: 440px) {
   .badgeList {
-    grid-gap: 1rem 0;
+    overflow-x: auto;
   }
 }

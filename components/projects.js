@@ -15,13 +15,14 @@ const Projects = () => {
       {/* 3 Projects  */}
       <div className={styles.projectsGroups}>
         {/* Project 1 */}
+
         <div
           data-aos="fade-right"
           data-aos-duration="500"
           className={styles.projectsGroup1}
         >
           <div className={styles.projectsTextLeft}>
-            <div className={styles.projectsName}>Project Name</div>
+            <div className={styles.projectsName}>Project 1</div>
             <div className={styles.projectsInfo}>
               Commodo deserunt magna sunt non ullamco nisi proident. Anim ad
               laboris tempor exercitation ad eiusmod velit sunt velit anim. Elit
@@ -45,7 +46,11 @@ const Projects = () => {
               className={styles.image}
             />
           </div>
+          <div className={styles.scrollToSeeMore}>
+            &gt;&gt;&gt; Swipe to see more &gt;&gt;&gt;
+          </div>
         </div>
+
         {/* Project 1 */}
 
         <hr
@@ -60,6 +65,7 @@ const Projects = () => {
           data-aos-duration="500"
           className={styles.projectsGroup2}
         >
+          <div className={styles.scrollToSeeMore}>&#8203;</div>
           <div className={styles.imageBoxLeft}>
             <Image
               priority
@@ -70,8 +76,9 @@ const Projects = () => {
               className={styles.image}
             />
           </div>
+
           <div className={styles.projectsTextRight}>
-            <div className={styles.projectsName}>Project Name</div>
+            <div className={styles.projectsName}>Project 2</div>
             <div className={styles.projectsInfo}>
               Commodo deserunt magna sunt non ullamco nisi proident. Anim ad
               laboris tempor exercitation ad eiusmod velit sunt velit anim. Elit
@@ -86,6 +93,7 @@ const Projects = () => {
             </div>
           </div>
         </div>
+
         {/* Project 2 */}
 
         <hr
@@ -101,7 +109,7 @@ const Projects = () => {
           className={styles.projectsGroup1}
         >
           <div className={styles.projectsTextLeft}>
-            <div className={styles.projectsName}>Project Name</div>
+            <div className={styles.projectsName}>Project 3</div>
             <div className={styles.projectsInfo}>
               Commodo deserunt magna sunt non ullamco nisi proident. Anim ad
               laboris tempor exercitation ad eiusmod velit sunt velit anim. Elit
@@ -125,6 +133,7 @@ const Projects = () => {
               className={styles.image}
             />
           </div>
+          <div className={styles.scrollToSeeMore}>&#8203;</div>
         </div>
         {/* Project 3 */}
       </div>

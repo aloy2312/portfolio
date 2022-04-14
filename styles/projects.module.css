@@ -2,7 +2,6 @@
   font-size: 45px;
   line-height: 67px;
   font-weight: 700;
-  margin-bottom: 5rem;
 }
 
 .projectsTextLeft {
@@ -101,6 +100,69 @@
   margin-bottom: 24rem;
 }
 
+.scrollToSeeMore {
+  font-family: monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 60px 0 20px 0;
+  color: transparent;
+  background: linear-gradient(
+    90deg,
+    rgb(17, 17, 17) 0%,
+    rgb(51, 51, 51) 10%,
+    rgb(102, 102, 102) 20%,
+    rgb(153, 153, 153) 30%,
+    rgb(204, 204, 204) 40%,
+    rgb(207, 207, 207) 50%,
+    rgb(204, 204, 204) 60%,
+    rgb(153, 153, 153) 70%,
+    rgb(102, 102, 102) 80%,
+    rgb(51, 51, 51) 90%,
+    rgb(26, 26, 26) 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: move 3s linear infinite, hide 3s 3s infinite, unhide 3s 3s infinite;
+}
+
+@keyframes move {
+  to {
+    background-position: -200% 0;
+  }
+}
+
+@keyframes hide {
+  0% {
+    opacity: 1;
+  }
+  0.01% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes unhide {
+  0% {
+    opacity: 0;
+  }
+  0.01% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 992px) {
+  .scrollToSeeMore {
+    display: none;
+  }
+}
+
 @media (max-width: 991px) {
   .projectsGroups {
     display: flex;
@@ -149,15 +211,13 @@
   }
 }
 
-@media (max-width: 410px) {
+@media (max-width: 405px) {
   .imageBoxLeft {
-    width: 100%;
     width: 256px;
     height: 192px;
   }
 
   .imageBoxRight {
-    width: 100%;
     width: 256px;
     height: 192px;
   }
