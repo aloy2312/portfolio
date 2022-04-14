@@ -98,10 +98,10 @@
 }
 
 .container {
-  margin-bottom: 16.5rem;
+  margin-bottom: 24rem;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 991px) {
   .projectsGroups {
     display: flex;
     gap: 2rem;

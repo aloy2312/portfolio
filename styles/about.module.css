@@ -23,10 +23,10 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 12rem;
+  margin-bottom: 24rem;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 991px) {
   .container {
     display: block;
   }
