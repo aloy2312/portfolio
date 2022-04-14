@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import styles from "../styles/nav.module.css";
 import { Link } from "react-scroll";
+import { useMediaQuery } from "react-responsive";
 
 const Navigation = () => {
   const [isActive, setActive] = useState(false);
@@ -9,6 +10,10 @@ const Navigation = () => {
   const toggleClass = () => {
     setActive(!isActive);
   };
+
+  const isTablet = useMediaQuery({
+    query: "(max-width: 991px)",
+  });
 
   return (
     <Navbar className={styles.navBar} sticky="top" bg="light" expand="lg">
@@ -54,13 +59,13 @@ const Navigation = () => {
           }
         ></span>
       </Navbar.Toggle>
-      <Navbar.Collapse className={``} id="basic-navbar-nav">
+      <Navbar.Collapse id="basic-navbar-nav">
         <Nav className={`ms-auto ${styles.dropdown}`}>
           <Link
             to="about"
             spy={true}
             smooth={true}
-            offset={-350}
+            offset={isTablet ? -90 : -300}
             duration={800}
             className={`${styles.navLinks} ${styles.aboutNavLink}`}
           >
@@ -71,7 +76,7 @@ const Navigation = () => {
             to="skills"
             spy={true}
             smooth={true}
-            offset={-350}
+            offset={isTablet ? -200 : -300}
             duration={800}
             className={`${styles.navLinks} ${styles.skillsNavLink}`}
           >
@@ -82,7 +87,7 @@ const Navigation = () => {
             to="projects"
             spy={true}
             smooth={true}
-            offset={-200}
+            offset={isTablet ? -100 : -300}
             duration={800}
             className={`${styles.navLinks} ${styles.projectsNavLink}`}
           >
