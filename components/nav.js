@@ -73,6 +73,7 @@ const NavIcon = styled.button`
   cursor: pointer;
   border: none;
   outline: none;
+  pointer-events: ${(props) => (props.canclick ? "auto" : "none !important")};
 
   @media (min-width: 769px) {
     display: none;
@@ -122,7 +123,7 @@ const OverlayMenu = styled.ul`
 
   li {
     opacity: ${(props) => (props.open ? 1 : 0)};
-    z-index:${(props) => (props.open ? 1 : -99)};
+    z-index:${(props) => (props.open ? 1 : -999)};
     font-size: 18px;
     margin-bottom:20px;
 
@@ -130,6 +131,7 @@ const OverlayMenu = styled.ul`
   
 
   & .about{
+    
     opacity: ${(props) => (props.open ? 1 : 0)};
     font-size: 18px;
     transition: opacity 0.4s 100ms ease-in-out;
@@ -182,6 +184,9 @@ const OverlayMenu = styled.ul`
 
 const Header = () => {
   const [toggle, toggleNav] = useState(false);
+
+  const [clickable, setClickable] = useState(true);
+
   return (
     <>
       <Nav>
@@ -208,7 +213,16 @@ const Header = () => {
             </Link>
           </Item>
         </Menu>
-        <NavIcon onClick={() => toggleNav(!toggle)}>
+        <NavIcon
+          canclick={clickable}
+          onClick={() => {
+            toggleNav(!toggle),
+              setClickable(!clickable),
+              setTimeout(() => {
+                setClickable(clickable);
+              }, 700);
+          }}
+        >
           <Line open={toggle} />
           <Line open={toggle} />
           <Line open={toggle} />

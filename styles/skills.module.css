@@ -36,6 +36,10 @@
   margin-right: 8px;
 }
 
+.loadMoreButton:hover {
+  cursor: pointer;
+}
+
 @media (max-width: 1980px) {
   .badgeList {
     grid-template-columns: repeat(4, 12rem);

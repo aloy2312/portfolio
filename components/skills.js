@@ -13,11 +13,11 @@ import styles from "../styles/skills.module.css";
 
 const Skills = () => {
   const [visible, setVisible] = useState(3);
-  const showMoreButton = useRef(null);
+  const loadMoreButton = useRef(null);
 
-  const showMoreItems = () => {
+  const loadMoreItems = () => {
     setVisible((prevValue) => prevValue + (badgeItems.length - 3));
-    showMoreButton.current.style.display = "none";
+    loadMoreButton.current.style.display = "none";
   };
 
   const badgeItems = [
@@ -115,12 +115,12 @@ const Skills = () => {
       <div className={styles.badgeList}>
         {badgeItems.slice(0, visible).map((item) => item)}
         <button
-          ref={showMoreButton}
+          ref={loadMoreButton}
           data-aos="flip-down"
           data-aos-duration="200"
           data-aos-delay={200 * visible}
-          onClick={showMoreItems}
-          className={styles.badge}
+          onClick={loadMoreItems}
+          className={`${styles.badge} ${styles.loadMoreButton}`}
         >
           + Load more
         </button>
