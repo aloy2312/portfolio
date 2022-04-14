@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import styles from "../styles/nav.module.css";
+import { Link } from "react-scroll";
 
 const Navigation = () => {
   const [isActive, setActive] = useState(false);
@@ -11,52 +12,93 @@ const Navigation = () => {
 
   return (
     <Navbar className={styles.navBar} sticky="top" bg="light" expand="lg">
-      <Navbar.Brand className={styles.navBrand} href="#home">
+      <Link
+        to="hero"
+        spy={true}
+        smooth={true}
+        offset={-350}
+        duration={800}
+        className={styles.navBrand}
+      >
         Aloysius Tan
-      </Navbar.Brand>
+      </Link>
       <Navbar.Toggle
         className={`navToggler ${styles.navToggler} `}
         aria-controls="basic-navbar-nav"
         onClick={toggleClass}
       >
         <span
-          className={`${isActive ? "span1" : ""} ${styles.spanGroup} `}
+          className={styles.spanGroup}
+          style={
+            isActive
+              ? { transform: "translate(0px, -2px) rotate(45deg)" }
+              : { backgroundColor: "white" }
+          }
         ></span>
         <span
-          className={`${styles.spanGroup} ${styles.spanMiddle} ${
-            isActive ? "span2" : ""
-          }`}
+          className={` ${styles.spanGroup} ${styles.spanMiddle} `}
+          style={
+            isActive
+              ? { transform: "translateX(15px)", opacity: "0" }
+              : { backgroundColor: "white" }
+          }
         ></span>
         <span
-          className={`${styles.spanGroup} ${isActive ? "span3" : ""}`}
+          className={styles.spanGroup}
+          style={
+            isActive
+              ? {
+                  transform: "translate(-3px, 3px) rotate(-45deg)",
+                }
+              : { backgroundColor: "white" }
+          }
         ></span>
       </Navbar.Toggle>
-      <Navbar.Collapse className={`${styles.collapse} `} id="basic-navbar-nav">
+      <Navbar.Collapse className={``} id="basic-navbar-nav">
         <Nav className={`ms-auto ${styles.dropdown}`}>
-          <Nav.Link
+          <Link
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={-350}
+            duration={800}
             className={`${styles.navLinks} ${styles.aboutNavLink}`}
-            href="#"
           >
             About
-          </Nav.Link>
-          <Nav.Link
+          </Link>
+
+          <Link
+            to="skills"
+            spy={true}
+            smooth={true}
+            offset={-350}
+            duration={800}
             className={`${styles.navLinks} ${styles.skillsNavLink}`}
-            href="#"
           >
             Skills
-          </Nav.Link>
-          <Nav.Link
+          </Link>
+
+          <Link
+            to="projects"
+            spy={true}
+            smooth={true}
+            offset={-200}
+            duration={800}
             className={`${styles.navLinks} ${styles.projectsNavLink}`}
-            href="#"
           >
             Projects
-          </Nav.Link>
-          <Nav.Link
+          </Link>
+
+          <Link
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={-200}
+            duration={800}
             className={`${styles.navLinks} ${styles.contactNavLink}`}
-            href="#"
           >
             Contact
-          </Nav.Link>
+          </Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
