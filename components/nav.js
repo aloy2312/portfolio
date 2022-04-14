@@ -76,7 +76,7 @@ const Navigation = () => {
             to="skills"
             spy={true}
             smooth={true}
-            offset={isTablet ? -200 : -300}
+            offset={isTablet ? -200 : -350}
             duration={800}
             className={`${styles.navLinks} ${styles.skillsNavLink}`}
           >
@@ -87,7 +87,7 @@ const Navigation = () => {
             to="projects"
             spy={true}
             smooth={true}
-            offset={isTablet ? -100 : -300}
+            offset={isTablet ? -100 : -150}
             duration={800}
             className={`${styles.navLinks} ${styles.projectsNavLink}`}
           >
@@ -98,7 +98,7 @@ const Navigation = () => {
             to="contact"
             spy={true}
             smooth={true}
-            offset={-200}
+            offset={0}
             duration={800}
             className={`${styles.navLinks} ${styles.contactNavLink}`}
           >
