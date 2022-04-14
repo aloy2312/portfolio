@@ -4,11 +4,11 @@ import styled from "styled-components";
 const Nav = styled.nav`
   padding: 0 20px;
   min-height: 9vh;
-  background: #121212;
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 999;
+  background: #121212ea;
   background-image: none;
   backdrop-filter: blur(3px);
 
@@ -57,7 +57,9 @@ const Menu = styled.ul`
   }
 `;
 
-const Item = styled.li``;
+const Item = styled.li`
+  pointer-events: ${(props) => (props.hide ? "none !important" : "auto")};
+`;
 
 const Link = styled.a`
   color: white;
@@ -98,13 +100,11 @@ const Overlay = styled.div`
   height: ${(props) => (props.open ? "25vh" : 0)};
   position: absolute;
   min-width: 80vw;
-  background: #121212ea;
   transition: height 0.4s ease-in-out;
   position: fixed;
   top: calc(9vh);
-  z-index: 999;
-  background-image: none;
-  backdrop-filter: blur(3px);
+  display: flex;
+  justify-content: end;
 
   @media (min-width: 769px) {
     display: none;
@@ -112,27 +112,39 @@ const Overlay = styled.div`
 `;
 
 const OverlayMenu = styled.ul`
+  background: #121212ea;
+  background-image: none;
+  backdrop-filter: blur(3px);
   height: ${(props) => (props.open ? "25vh" : 0)};
   list-style: none;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: end;
-  padding:0;
-  margin:0 25px 0 0;
+  justify-content: space-around;
+  width:fit-content;
+  padding:0 20px 0 0;
+  margin: 0 10px 0 0;
+  border-right:2px solid ;
+  border-color:grey;
+  border-radius:3%;
+  
+
 
   li {
     opacity: ${(props) => (props.open ? 1 : 0)};
-    z-index:${(props) => (props.open ? 1 : -999)};
-    font-size: 18px;
-    margin-bottom:20px;
+    font-size: 16px;
+    margin:10px 0;
 
   }
   
 
   & .about{
+    pointer-events: ${(props) => (props.hide ? "none !important" : "auto")};
     
     opacity: ${(props) => (props.open ? 1 : 0)};
+    display: ${(props) => (props.hide ? "none !important " : "flex")};
+
     font-size: 18px;
     transition: opacity 0.4s 100ms ease-in-out;
 
@@ -141,14 +153,20 @@ const OverlayMenu = styled.ul`
   
 
   & .skills{
+    pointer-events: ${(props) => (props.hide ? "none !important" : "auto")};
     opacity: ${(props) => (props.open ? 1 : 0)};
+    display: ${(props) => (props.hide ? "none !important " : "flex")};
+
     font-size: 18px;
     transition: opacity 0.4s 200ms ease-in-out;
   }
 
 
   & .projects{
+    pointer-events: ${(props) => (props.hide ? "none !important" : "auto")};
     opacity: ${(props) => (props.open ? 1 : 0)};
+    display: ${(props) => (props.hide ? "none !important " : "flex")};
+
     font-size: 18px;
     transition: opacity 0.4s 300ms ease-in-out;
 
@@ -157,7 +175,10 @@ const OverlayMenu = styled.ul`
 
 
   & .contact{
+    pointer-events: ${(props) => (props.hide ? "none !important" : "auto")};
+
     opacity: ${(props) => (props.open ? 1 : 0)};
+    display: ${(props) => (props.hide ? "none !important " : "flex")};
     font-size: 18px;
     transition: opacity 0.4s 400ms ease-in-out;
     
@@ -187,10 +208,12 @@ const Header = () => {
 
   const [clickable, setClickable] = useState(true);
 
+  const [hide, setHide] = useState(true);
+
   return (
     <>
       <Nav>
-        <Logo>CSS Tricks</Logo>
+        <Logo>ALOYSIUS TAN</Logo>
         <Menu>
           <Item>
             <Link target="#" href="https://www.instagram.com/igor_dumencic/">
@@ -220,7 +243,8 @@ const Header = () => {
               setClickable(!clickable),
               setTimeout(() => {
                 setClickable(clickable);
-              }, 700);
+              }, 700),
+              setHide(!hide);
           }}
         >
           <Line open={toggle} />
@@ -228,7 +252,7 @@ const Header = () => {
           <Line open={toggle} />
         </NavIcon>
       </Nav>
-      <Overlay open={toggle}>
+      <Overlay hidden={hide} open={toggle}>
         <OverlayMenu open={toggle}>
           <Item>
             <Link
