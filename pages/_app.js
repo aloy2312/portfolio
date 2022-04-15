@@ -29,6 +29,16 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <title>Aloysius Tan</title>
         <meta name="description" content="Hi! This is my portfolio website" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+        />
+        <meta name="keywords" content="Aloysius,Tan,Portfolio,Website"></meta>
+        <meta name="author" content="Aloysius Tan"></meta>
+        <meta
+          property="og:image"
+          content="https://aloysius.vercel.app/_next/image?url=%2Fimages%2Fprofile.jpg&w=384&q=75"
+        />
         <link rel="icon" href="" />
       </Head>
 
